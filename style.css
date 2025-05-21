@@ -165,26 +165,30 @@ body {
     border-radius: 8px;
   }
 
-/* Mobile (up to 480px) */
-@media (max-width: 480px) {
-  .card {
-    flex-direction: column;
-    font-size: 14px;
-  }
-}
-
-/* Tablets (portrait and small landscape) */
-@media (max-width: 768px) {
+/* Tablet: two columns */
+@media (min-width: 768px) {
   .container {
-    padding: 1rem;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 0 0 calc(50% - 10px); /* Two cards per row */
   }
 }
 
-/* Laptops (basic responsiveness) */
-@media (max-width: 992px) {
+/* Laptop/Desktop: three columns */
+@media (min-width: 992px) {
   .card {
-    grid-template-columns: 1fr;
+    flex: 0 0 calc(33.33% - 13px); /* Three cards per row */
+  }
+}
+
+/* Large screens: four columns */
+@media (min-width: 1200px) {
+  .card {
+    flex: 0 0 calc(25% - 15px); /* Four cards per row */
   }
 }
 
