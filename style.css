@@ -165,4 +165,28 @@ body {
     border-radius: 8px;
   }
 
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .card {
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
+
+/* Tablets (portrait and small landscape) */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+}
+
+/* Laptops (basic responsiveness) */
+@media (max-width: 992px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
