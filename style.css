@@ -1,0 +1,168 @@
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+body {
+    color: rgb(251, 251, 251);
+    margin: 0;
+    background-color: #0e1525;
+    
+}
+
+
+   .container {
+        display: flex;
+        justify-content: space-between;  /* moves the items */
+        align-items: center;
+        background-color: #2c3344;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+
+.left-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.left-content i {
+    color: #ff5f5f;
+    font-size: 1.4rem;
+
+  }
+
+.toggle-icon {
+    margin-top: 20px;
+    background-color: #3a3f4b;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.toggle-icon i {
+    
+    font-size: 1.2rem;
+    color: white;
+    
+}
+
+.toggle-icon:hover {
+    background-color:#505763;
+}
+
+.extensionList {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightButtons button {
+    background-color: #2c3344;
+    color: rgb(219, 219, 219);
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    min-width: 60px;
+    min-height: 30px;    
+
+}
+
+.rightButtons button:hover {
+    background-color: #ff5f5f;
+}
+
+.rightButtons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.cardsDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.card {
+    background-color: #2c3344;
+    border: 1px solid #444b5a;
+    color: white;
+    height: 180px;
+    margin: 8;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card .icon i {
+    font-size: 20px;
+    color: #2c3344;
+
+}
+
+.card h4 {
+    margin: 4px 0;
+    font-size: 16px;
+
+}
+
+.card p {
+    font-size: 12px;
+    flex-grow: 1;
+    color: #ccc;
+}
+
+
+
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actions button {
+    padding: 4px 8px;
+    border: none;
+    background-color: #161c29;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 0.4s ease;
+
+}
+.actions button:hover {
+    transform: scale(1.1);
+}
+
+.toggle {
+    width: 32px;
+    height: 16px;
+    background-color: #666;
+    border-radius: 8px;
+  }
+
+
